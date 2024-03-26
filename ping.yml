@@ -1,0 +1,8 @@
+- hosts: 
+    - all
+  become: true 
+  gather_facts: no 
+  tasks: 
+    # This is a test to see if ping works 
+    - name: "Ping" 
+      ping:
